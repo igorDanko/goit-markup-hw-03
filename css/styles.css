@@ -82,6 +82,10 @@ img {
 
 /*============ HEADER ================*/
 
+.header {
+  border-bottom: 1px solid var(--color-accent);
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -89,6 +93,7 @@ img {
 }
 
 .header-logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -100,6 +105,7 @@ img {
 
 .header-nav {
   display: flex;
+  align-items: center;
   column-gap: 76px;
   font-weight: 500;
   color: var(--color-dark);
@@ -107,10 +113,11 @@ img {
 
 .header-nav-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .header-nav-item {
+  gap: 40px;
 }
 
 .link {
@@ -130,10 +137,11 @@ img {
 
 .header-address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .header-address-list-item {
+  gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -141,17 +149,16 @@ img {
 /*========================== HERO ================================ */
 
 .hero {
-  margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--color-dark);
 }
 
 .hero-contanier {
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-title {
-  max-width: 500px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -164,7 +171,7 @@ img {
 }
 
 .hero-btn {
-  min-width: 170px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
   margin: 0 auto;
@@ -187,6 +194,7 @@ img {
 /*=========================== ADVANTAGES ============================= */
 .advantages {
   margin-bottom: 120px;
+  padding: 120px 0;
 }
 
 .advantages-container {
@@ -214,7 +222,6 @@ img {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
-  margin-bottom: 120px;
   background-color: var(--color-light);
 }
 
@@ -241,14 +248,13 @@ img {
   border-radius: 0 0 4px 4px;
 }
 
-.team-photo {
-  margin-bottom: 32px;
+.team-card-text {
+  padding: 32px 0;
 }
 
 .team-text {
   font-size: 16px;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .team-card-title {
@@ -264,7 +270,7 @@ img {
 /* ====================OUR PORTFOLIO=================== */
 
 .portfolio {
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -286,16 +292,16 @@ img {
 }
 
 .portfolio-item {
-  border: 1px solid var(--color-accent);
   width: calc((100% - (24px * 2)) / 3);
 }
 
-.portfolio-image {
-  margin-bottom: 32px;
+.portfolio-card-text {
+  padding: 32px 16px;
+  border: 1px solid var(--color-accent);
+  border-top: none;
 }
 
 .portfolio-card-title {
-  padding-left: 16px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -305,20 +311,19 @@ img {
 }
 
 .portfolio-text {
-  padding-left: 16px;
-  margin-bottom: 32px;
   letter-spacing: 0.02em;
 }
 
 /* =====================FOOTER======================== */
 
 .footer {
-  padding-top: 102px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--color-dark);
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
